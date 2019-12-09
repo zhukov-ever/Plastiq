@@ -13,6 +13,12 @@
 		0101D76B2399A87F00953BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0101D76A2399A87F00953BE0 /* Assets.xcassets */; };
 		0101D76E2399A87F00953BE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0101D76D2399A87F00953BE0 /* Preview Assets.xcassets */; };
 		0101D7712399A87F00953BE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0101D76F2399A87F00953BE0 /* LaunchScreen.storyboard */; };
+		0101D77B2399A8C200953BE0 /* PlasticListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101D77A2399A8C200953BE0 /* PlasticListViewModel.swift */; };
+		0101D77E2399A8F200953BE0 /* Plastic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101D77D2399A8F200953BE0 /* Plastic.swift */; };
+		0101D7802399A91B00953BE0 /* PlasticListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101D77F2399A91B00953BE0 /* PlasticListView.swift */; };
+		0101D7822399A96000953BE0 /* ExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101D7812399A95F00953BE0 /* ExtraView.swift */; };
+		0101D7842399A96F00953BE0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101D7832399A96F00953BE0 /* WelcomeView.swift */; };
+		0101D78A2399ABCD00953BE0 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101D7892399ABCD00953BE0 /* ButtonStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		0101D76D2399A87F00953BE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0101D7702399A87F00953BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0101D7722399A87F00953BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0101D77A2399A8C200953BE0 /* PlasticListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlasticListViewModel.swift; sourceTree = "<group>"; };
+		0101D77D2399A8F200953BE0 /* Plastic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plastic.swift; sourceTree = "<group>"; };
+		0101D77F2399A91B00953BE0 /* PlasticListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlasticListView.swift; sourceTree = "<group>"; };
+		0101D7812399A95F00953BE0 /* ExtraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraView.swift; sourceTree = "<group>"; };
+		0101D7832399A96F00953BE0 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		0101D7892399ABCD00953BE0 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +68,11 @@
 		0101D7632399A87D00953BE0 /* Plastiq */ = {
 			isa = PBXGroup;
 			children = (
+				0101D77C2399A8E000953BE0 /* Entities */,
+				0101D7792399A89100953BE0 /* ViewModels */,
+				0101D7782399A88B00953BE0 /* Views */,
 				0101D7642399A87D00953BE0 /* AppDelegate.swift */,
 				0101D7662399A87D00953BE0 /* SceneDelegate.swift */,
-				0101D7682399A87D00953BE0 /* ContentView.swift */,
 				0101D76A2399A87F00953BE0 /* Assets.xcassets */,
 				0101D76F2399A87F00953BE0 /* LaunchScreen.storyboard */,
 				0101D7722399A87F00953BE0 /* Info.plist */,
@@ -73,6 +87,42 @@
 				0101D76D2399A87F00953BE0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0101D7782399A88B00953BE0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0101D7882399ABBC00953BE0 /* Styles */,
+				0101D7682399A87D00953BE0 /* ContentView.swift */,
+				0101D7832399A96F00953BE0 /* WelcomeView.swift */,
+				0101D77F2399A91B00953BE0 /* PlasticListView.swift */,
+				0101D7812399A95F00953BE0 /* ExtraView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0101D7792399A89100953BE0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0101D77A2399A8C200953BE0 /* PlasticListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0101D77C2399A8E000953BE0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0101D77D2399A8F200953BE0 /* Plastic.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0101D7882399ABBC00953BE0 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				0101D7892399ABCD00953BE0 /* ButtonStyles.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +197,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0101D7652399A87D00953BE0 /* AppDelegate.swift in Sources */,
+				0101D77B2399A8C200953BE0 /* PlasticListViewModel.swift in Sources */,
 				0101D7672399A87D00953BE0 /* SceneDelegate.swift in Sources */,
+				0101D7842399A96F00953BE0 /* WelcomeView.swift in Sources */,
+				0101D78A2399ABCD00953BE0 /* ButtonStyles.swift in Sources */,
+				0101D7822399A96000953BE0 /* ExtraView.swift in Sources */,
+				0101D7802399A91B00953BE0 /* PlasticListView.swift in Sources */,
 				0101D7692399A87D00953BE0 /* ContentView.swift in Sources */,
+				0101D77E2399A8F200953BE0 /* Plastic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
