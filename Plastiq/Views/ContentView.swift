@@ -21,7 +21,8 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selectedTabIndex) {
-            WelcomeView(selectedTabIndex: $selectedTabIndex, shouldShowDetails: $shouldShowDetails)
+            WelcomeView(selectedTabIndex: $selectedTabIndex,
+                        shouldShowDetails: $shouldShowDetails)
                 .tabItem {
                     VStack {
                         Image(systemName: "house")
@@ -30,6 +31,7 @@ struct ContentView: View {
                 }
                 .tag(TabViewTypes.welcome.rawValue)
             PlasticListView()
+                .environmentObject(PlasticListViewModel())
                 .tabItem {
                     VStack {
                         Image(systemName: "list.dash")

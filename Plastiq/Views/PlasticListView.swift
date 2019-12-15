@@ -12,7 +12,7 @@ import SwiftUI
 struct PlasticListView: View {
     static let name = "Plastic list"
     
-    @ObservedObject var viewModel = PlasticListViewModel()
+    @EnvironmentObject var viewModel: PlasticListViewModel
     
     var body: some View {
         NavigationView {
@@ -30,7 +30,10 @@ struct PlasticListView: View {
 }
 
 struct PlasticListView_Previews: PreviewProvider {
+    static let viewModel = PlasticListViewModel()
+    
     static var previews: some View {
         PlasticListView()
+            .environmentObject(viewModel)
     }
 }

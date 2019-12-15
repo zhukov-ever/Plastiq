@@ -13,6 +13,7 @@ class PlasticListViewModel: ObservableObject {
     @Published private(set) var entities: [Plastic] = []
     
     init() {
+        print(#function)
         entities = [
             Plastic(name: "PLA", price: 12),
             Plastic(name: "ABS", price: 15),
